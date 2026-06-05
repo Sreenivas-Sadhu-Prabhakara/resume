@@ -31,13 +31,14 @@
   // names as they appear in world-atlas 110m
   const MARKET_GEO = new Set(["India", "United States of America", "Singapore", "Philippines", "Argentina"]);
 
+  // Most recent first (reverse-chronological)
   const CAREER = [
-    { year: 2007, industry: "IT Services & Consulting",      role: "Java Developer",                                  place: "India" },
-    { year: 2011, industry: "IT Services & Consulting",      role: "Integration Lead · TIBCO",                        place: "New Jersey, USA" },
-    { year: 2014, industry: "IT Services & Consulting",      role: "API Architect",                                   place: "United States" },
-    { year: 2018, industry: "API Platform Product · SaaS",   role: "Principal Architect",                             place: "India" },
+    { year: 2024, industry: "Global Technology Consulting",    role: "Senior Director — API CoE & Architecture Head", place: "Bengaluru, India", star: true },
     { year: 2020, industry: "Digital Engineering Consultancy", role: "Head of Engineering",                           place: "Global" },
-    { year: 2024, industry: "Global Technology Consulting",  role: "Senior Director — API CoE & Architecture Head",   place: "Bengaluru, India", star: true },
+    { year: 2018, industry: "API Platform Product · SaaS",     role: "Principal Architect",                           place: "India" },
+    { year: 2014, industry: "IT Services & Consulting",        role: "API Architect",                                 place: "United States" },
+    { year: 2011, industry: "IT Services & Consulting",        role: "Integration Lead · TIBCO",                      place: "New Jersey, USA" },
+    { year: 2007, industry: "IT Services & Consulting",        role: "Java Developer",                                place: "India" },
   ];
 
   const SKILLS = [
