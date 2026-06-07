@@ -28,7 +28,7 @@
     { name: "Philippines",    city: "Manila",       code: "PH", lat: 14.60, lon: 120.98,            color: C.violet, note: "Universal bank — platform setup & legacy migration" },
     { name: "Argentina",      city: "Buenos Aires", code: "AR", lat: -34.60, lon: -58.38,           color: C.coral,  note: "Early-career international delivery market" },
   ];
-  // names as they appear in world-atlas 110m
+  // names as they appear in the Natural Earth admin-0 (India POV) data
   const MARKET_GEO = new Set(["India", "United States of America", "Singapore", "Philippines", "Argentina"]);
 
   // Most recent first (reverse-chronological)
@@ -343,7 +343,7 @@
       });
     }
 
-    d3.json("assets/data/countries-110m.json").then((world) => {
+    d3.json("assets/data/countries-india-pov.json").then((world) => {
       build(world);
       let t; addEventListener("resize", () => { clearTimeout(t); t = setTimeout(() => build(world), 220); });
     }).catch(() => { host.innerHTML = '<p style="padding:2rem;color:var(--ink-3);font-family:var(--mono);font-size:.85rem">Map data unavailable — see markets list.</p>'; });

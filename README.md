@@ -37,7 +37,7 @@ styles.css          design system ("data observatory" theme)
 app.js              data model + D3 visualisations + interactions
 assets/
   vendor/           d3.v7.min.js, topojson-client.v3.min.js
-  data/             countries-110m.json (Natural Earth, via world-atlas)
+  data/             countries-india-pov.json (Natural Earth admin-0, India point-of-view boundaries)
   img/              favicon
 ```
 
